@@ -56,34 +56,22 @@ const GNB = () => {
           left: { xs: '0', md: '30px' },
         }}
       >
-        <Link href="/">
-          {mode === 'dark' ? (
-            <Box
-              component="img"
-              alt="logo"
-              src={'/assets/ion_nav_logo.png'}
-              sx={{
-                width: { xs: '38px', md: '57px' },
-                height: { xs: '16px', md: '24px' },
-                marginBottom: { md: '40px' },
-                marginLeft: { md: '24px' },
-                cursor: 'pointer',
-              }}
-            />
-          ) : (
-            <Box
-              component="img"
-              alt="logo"
-              src={'/assets/ion_nav_light_logo.png'}
-              sx={{
-                width: { xs: '38px', md: '57px' },
-                height: { xs: '16px', md: '24px' },
-                marginBottom: { md: '40px' },
-                marginLeft: { md: '24px' },
-                cursor: 'pointer',
-              }}
-            />
-          )}
+        <Link href="/" prefetch={false} style={{ textDecoration: 'none' }}>
+          <Typography
+            sx={{
+              color: isStaking ? 'text.primary' : RelativeColors.grey05,
+              padding: '0',
+              marginBottom: '28px',
+              marginLeft: { md: '24px' },
+              textTransform: 'none',
+              fontWeight: 600,
+              fontSize: '16px',
+              textDecoration: 'none',
+              cursor: 'pointer',
+            }}
+          >
+            Home
+          </Typography>
         </Link>
 
         <Box

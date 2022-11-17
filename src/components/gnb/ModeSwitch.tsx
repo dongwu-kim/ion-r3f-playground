@@ -3,8 +3,6 @@ import React from 'react';
 import { Box } from '@mui/material';
 
 import { useColorModeState } from '@/../pages/_app';
-import DarkModeIcon from '@/assets/dark-button-img.svg';
-import LightModeIcon from '@/assets/light-button-img.svg';
 import { RelativeColors } from '@/theme/palette';
 
 const ModeSwitch = () => {
